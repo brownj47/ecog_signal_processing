@@ -28,6 +28,8 @@ import matplotlib.pyplot as plt
 from scipy import signal
 from scipy.signal import butter, filtfilt
 
+import filter500to5k
+
 # Update data_path to point to your downloaded data
 data_path = "ECoGData_AvailabletoStudents.mat"
 data = sio.loadmat(data_path)
@@ -49,3 +51,10 @@ print("SFreq: " + str(Fs))  # 24414 Hz
 #  https://docs.scipy.org/doc/scipy/reference/generated/scipy.signal.filtfilt.html
 
 # TODO: the rest!
+
+sos_filter_array = filter500to5k.filter500to5k(Fs)
+
+print("SOS FILTER ARRAY: ", sos_filter_array)
+
+
+

@@ -12,5 +12,5 @@ def filter500to5k(Fs):
     fc2 = 5000 # cutoff frequency 2
 
     # Design the Butterworth filter
-    sos = butter(N, [fc1, fc2], btype='band', fs=Fs, output='sos')
+    sos = butter(N, [fc1, fc2], btype='bandpass', fs=Fs, output='sos')
     return sos
