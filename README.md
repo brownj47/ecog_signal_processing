@@ -8,6 +8,7 @@ This project focuses on extracting multi-unit activity (MUA) from ECoG recording
 - [Setup](#setup)
 - [Usage](#usage)
 - [Example Output](#example-output)
+- [Credits](#credits)
 
 ## Project Overview
 This project involves filtering, detecting, and plotting neural responses to optogenetic stimulation. The data consists of three different stimulation patterns, each with unique illumination configurations. Using Python and provided libraries, the project processes the ECoG data to visualize MUA for each condition.
@@ -47,3 +48,6 @@ The assignment includes the following tasks:
 ## Example Output
 - **Raster Plot**: Shows MUA timing per trial.
 - **Firing Rate Plot**: Average firing rate over time across all trials for each stimulation pattern.
+
+## Credits
+Starter code adapted by TA Matthew J. Bryan for Autumn 2023, from reference code written by Student Iman Tanumihardja and TA Courtnie Paschall, Autumn 2022. BIOEN/EE 460/560, CSE 490N.
